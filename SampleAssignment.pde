@@ -8,6 +8,7 @@ int x = 41;
 int s = 3;
 void draw()
 {
+  background(0,0,150);
   //strokeWeight(4);
   //stroke(140,0,0);
   //fill(50,150,255);
@@ -16,7 +17,9 @@ void draw()
   //fill(0,100,0);
   //ellipse(85,40,10,15);
   //ellipse(115,40,10,15);
+
   x += s;
+  fill(200,0,150);
   ellipse(x,50,80,80);
   if (x>=160||x<=40) {
     s = -s;
